@@ -4,7 +4,7 @@ async function getAlbums(username) {
 		method: "user.getrecenttracks",
 		user: username,
 		limit: "1",
-		api_key: "0a828de6701971f3766542996b54c24b",
+		api_key: "0a828de6701971f3766542996b54c24b", //important note: this isn't my api key, so don't worry about it being exposed
 		format: "json",
 	});
 	url.search = params.toString();
@@ -28,5 +28,5 @@ async function httpRequest(url) {
 	if (entries.length !== 4) {
 		return new Response("<h1>Please add a username to the url</h1>");
 	}
-	return Response.redirect(await getAlbums(entries[entries.length - 1]), 301);
+	return Response.redirect(await getAlbums(entries[entries.length - 1]), 302);
 }
