@@ -1,0 +1,12 @@
+name = "cargo-van"
+main = "index.js"
+
+workers_dev = true
+compatibility_date = "2023-02-08"
+
+kv_namespaces = [
+    { binding = "cargo_van", id = "e2563ba4712641e8accbf49a042971db" },
+]
+
+[triggers]
+crons = ["*/10 * * * *"]

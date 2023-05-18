@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "name": "cargo-van",
+  "version": "0.1.0",
+  "main": "index.js",
+  "author": "Devon Sawatsky",
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler publish"
+  }
+}
